@@ -1,6 +1,7 @@
 module.exports = {
-    apps : [{
-      name   : "EMERGINGPROJECT-app",
+    apps : [
+    {
+      name   : "EMERGINGPROJECT",
       script : "npm",
       args:"run dev",
       instances: 1, // or 'max'
@@ -9,9 +10,9 @@ module.exports = {
       max_memory_restart: '1G',
       env: {
         NODE_ENV: 'development',
-      },
-      env_production : {
-        NODE_ENV: 'production'
+      
+        ENV_VAR1: 'environment-variable',
       }
-    }]
+    }
+   ]
   };
